@@ -29,7 +29,7 @@ public class Pneumatics extends SubsystemBase {
   }
 
   public void run() {
-    compressor.enableAnalog(60, 120);
+    compressor.enableAnalog(60, 120); //Compressor will start when below 60psi, and stop when it reaches 120psi. Will start again at 60 psi
     System.out.println("Run Method exeuted");
   }
 }
